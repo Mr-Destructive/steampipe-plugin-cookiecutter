@@ -1,0 +1,9 @@
+{
+    "plugin_name": "myplugin",
+    "plugin_standard_name": "MyPlugin",
+    "description": "",
+    "author_name": "",
+    "version": "0.0.1",
+    "table_name": "tablename",
+    "table_standard_name": "TableName"
+}
