@@ -53,7 +53,7 @@ func {{cookiecutter.table_name}}(ctx context.Context, d *plugin.QueryData, _ *pl
 	if settingsString != "" {
 		// Overwrite any settings provided in the settings qual. If a field
 		// is not passed in the settings, then default to the settings above.
-		var crQual GenerationRequestQual
+		var crQual {{ cookiecutter.table_name }}RequestQual
 		err := json.Unmarshal([]byte(settingsString), &crQual)
 		if err != nil {
 			plugin.Logger(ctx).Error("{{cookiecutter.table_name}}.{{cookiecutter.table_name}}", "unmarshal_error", err)

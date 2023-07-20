@@ -5,7 +5,9 @@ import (
 )
 
 type {{cookiecutter.plugin_name}}Config struct {
-	APIKey *string `cty:"api_key" hcl:"api_key"`
+}
+
+var ConfigSchema = map[string]*schema.Attribute{
 }
 
 func ConfigInstance() interface{} {
