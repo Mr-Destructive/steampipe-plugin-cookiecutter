@@ -54,7 +54,7 @@ steampipe plugin install {{cookiecutter.plugin_name}}
 
 ### Configuration
 
-Installing the latest comereai plugin will create a config file (`~/.steampipe/config/{{cookiecutter.permissions}}.spc`) with a single connection named `{{cookiecutter.plugin_name}}`:
+Installing the latest comereai plugin will create a config file (`~/.steampipe/config/{{cookiecutter.plugin_name}}.spc`) with a single connection named `{{cookiecutter.plugin_name}}`:
 
 ```hcl
 connection "{{cookiecutter.plugin_name}}" {
