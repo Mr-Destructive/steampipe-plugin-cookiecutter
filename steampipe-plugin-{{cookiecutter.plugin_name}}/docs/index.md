@@ -1,13 +1,13 @@
 ---
-organization: Turbot
+organization: {{cookiecutter.github_username}}
 category: ["ai"]
-icon_url: "/images/plugins/turbot/{{cookiecutter.plugin_name}}.svg"
+icon_url: "/images/plugins/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}.svg"
 brand_color: "#000000"
 display_name: "{{cookiecutter.plugin_standard_name}}"
 short_name: "{{cookiecutter.plugin_name}}"
 description: "{{cookiecutter.plugin_description}}."
 og_description: "Query {{cookiecutter.plugin_standard_name}} with SQL! Open source CLI. No DB required."
-og_image: "/images/plugins/turbot/{{cookiecutter.plugin_name}}-social-graphic.png"
+og_image: "/images/plugins/{{cookiecutter.plugin_name}}/{{cookiecutter.plugin_name}}-social-graphic.png"
 ---
 
 # {{cookiecutter.plugin_standard_name}} + Steampipe
@@ -31,7 +31,7 @@ where
 
 ## Documentation
 
-- **[Table definitions & examples →](/docs/tables)**
+- **[Table definitions & examples →](/plugins/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}/tables)*
 
 ## Get started
 
@@ -66,5 +66,5 @@ connection "{{cookiecutter.plugin_name}}" {
 
 ## Get involved
 
-- Open source: https://github.com/turbot/steampipe-plugin-{{cookiecutter.plugin_name}}
+- Open source: https://github.com/{{cookiecutter.github_username}}/steampipe-plugin-{{cookiecutter.plugin_name}}
 - Community: [Slack Channel](https://steampipe.io/community/join)

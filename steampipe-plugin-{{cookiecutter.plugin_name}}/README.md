@@ -4,16 +4,20 @@
 Use SQL to query {{cookiecutter.table_name}} and more from {{cookiecutter.plugin_standard_name}}.
 
 - **[Get started →](https://hub.steampipe.io/plugins/turbot/{{cookiecutter.plugin_name}})**
-- Documentation: [Table definitions & examples](https://hub.steampipe.io/plugins/turbot/{{cookiecutter.plugin_name}}/tables)
+- Documentation: [Table definitions & examples](https://hub.steampipe.io/plugins/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}/tables)
 - Community: [Slack Channel](https://steampipe.io/community/join)
-- Get involved: [Issues](https://github.com/turbot/steampipe-plugin-{{cookiecutter.plugin_name}}/issues)
+- Get involved: [Issues](https://github.com/{{cookiecutter.github_username}}/steampipe-plugin-{{cookiecutter.plugin_name}}/issues)
 
 ## Quick start
 
 Install the plugin with [Steampipe](https://steampipe.io):
 
 ```shell
+{%- if cookiecutter.github_username == "turbot" -%}
 steampipe plugin install {{cookiecutter.plugin_name}}
+{%- else -%}
+steampipe plugin install {{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}
+{%- endif -%}
 ```
 
 Configure your plugin in `~/.steampipe/config/{{cookiecutter.plugin_name}}.spc`:
@@ -52,7 +56,7 @@ Prerequisites:
 Clone:
 
 ```sh
-git clone https://github.com/turbot/steampipe-plugin-{{cookiecutter.plugin_name}}.git
+git clone https://github.com/{{cookiecutter.github_username}}/steampipe-plugin-{{cookiecutter.plugin_name}}.git
 cd steampipe-plugin-{{cookiecutter.plugin_name}}
 ```
 
@@ -88,4 +92,4 @@ Please see the [contribution guidelines](https://github.com/turbot/steampipe/blo
 `help wanted` issues:
 
 - [Steampipe](https://github.com/turbot/steampipe/labels/help%20wanted)
-- [{{cookiecutter.plugin_standard_name}}Plugin](https://github.com/turbot/steampipe-plugin-{{cookiecutter.plugin_name}}/labels/help%20wanted)
+- [{{cookiecutter.plugin_standard_name}}Plugin](https://github.com/{{cookiecutter.github_username}}/steampipe-plugin-{{cookiecutter.plugin_name}}/labels/help%20wanted)

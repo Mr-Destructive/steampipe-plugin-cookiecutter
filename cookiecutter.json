@@ -2,7 +2,7 @@
     "plugin_name": "myplugin",
     "plugin_standard_name": "MyPlugin",
     "plugin_description": "",
-    "author_name": "",
+    "github_username": "turbot",
     "version": "0.0.1",
     "table_name": "tablename",
     "table_standard_name": "TableName"
