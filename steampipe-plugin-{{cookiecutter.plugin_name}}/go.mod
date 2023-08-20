@@ -1,4 +1,4 @@
-module github.com/turbot/steampipe-plugin-{{cookiecutter.plugin_name}}
+module github.com/{{ cookiecutter.github_username }}/steampipe-plugin-{{cookiecutter.plugin_name}}
 
 go 1.19
 

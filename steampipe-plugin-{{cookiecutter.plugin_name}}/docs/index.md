@@ -15,7 +15,6 @@ og_image: "/images/plugins/{{cookiecutter.plugin_name}}/{{cookiecutter.plugin_na
 
 [Steampipe](https://steampipe.io) is an open source CLI to instantly query cloud APIs using SQL.
 
-Get generations for a given text prompt in your {{cookiecutter.plugin_standard_name}} account:
 
 ```sql
 select
@@ -40,7 +39,11 @@ where
 Download and install the latest {{cookiecutter.plugin_standard_name}} plugin:
 
 ```bash
+{%- if cookiecutter.github_username == "turbot" -%}
 steampipe plugin install {{cookiecutter.plugin_name}}
+{%- else -%}
+steampipe plugin install {{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}
+{%- endif -%}
 ```
 
 ### Credentials
@@ -58,11 +61,10 @@ Installing the latest comereai plugin will create a config file (`~/.steampipe/c
 
 ```hcl
 connection "{{cookiecutter.plugin_name}}" {
-  plugin = "{{cookiecutter.plugin_name}}"
+  plugin = "{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}"
 
 }
 ```
-
 
 ## Get involved
 

@@ -3,7 +3,7 @@
 
 Use SQL to query {{cookiecutter.table_name}} and more from {{cookiecutter.plugin_standard_name}}.
 
-- **[Get started →](https://hub.steampipe.io/plugins/turbot/{{cookiecutter.plugin_name}})**
+- **[Get started →](https://hub.steampipe.io/plugins/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}})**
 - Documentation: [Table definitions & examples](https://hub.steampipe.io/plugins/{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}/tables)
 - Community: [Slack Channel](https://steampipe.io/community/join)
 - Get involved: [Issues](https://github.com/{{cookiecutter.github_username}}/steampipe-plugin-{{cookiecutter.plugin_name}}/issues)
@@ -24,7 +24,7 @@ Configure your plugin in `~/.steampipe/config/{{cookiecutter.plugin_name}}.spc`:
 
 ```hcl
 connection "{{cookiecutter.plugin_name}}" {
-  plugin  = "{{cookiecutter.plugin_name}}"
+  plugin  = "{{cookiecutter.github_username}}/{{cookiecutter.plugin_name}}"
   # ...
 }
 ```
