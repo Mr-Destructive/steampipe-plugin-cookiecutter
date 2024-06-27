@@ -11,11 +11,11 @@ pip install cookiecutter
 ### Usage
 
 ```bash
-cookiecutter github.com/mr-destructive/plugin-cookiecutter
+cookiecutter github.com/mr-destructive/steampipe-plugin-cookiecutter
 
 OR
 
-pipx run cookiecutter github.com/mr-destructive/plugin-cookiecutter
+pipx run cookiecutter github.com/mr-destructive/steampipe-plugin-cookiecutter
 ```
 
 Fill in some details like
